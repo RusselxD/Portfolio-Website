@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "./components/Navbar";
 
-import IntroSection from "./components/IntroSection";
+import IntroSection from "./components/IntroSection/IntroSection";
 import ProfileSection from "./components/ProfileSection";
 
 const Profile = () => {

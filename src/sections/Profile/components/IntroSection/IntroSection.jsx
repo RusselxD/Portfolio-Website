@@ -1,17 +1,6 @@
 import React from "react";
-import { FaLink } from "react-icons/fa";
 
-function ProfileLinks() {
-    return (
-        <div className="border border-red-700 w-fit relative">
-            <button className="px-5 py-3 bg-black text-white hover:translate-x-1 hover:translate-y-1 transition-transform duration-75">
-                My Profiles
-                <FaLink className="inline-block text-primary ml-3" />
-            </button>
-            <span className="absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
-        </div>
-    );
-}
+import ProfileLinks from "./ProfileLinks";
 
 const IntroSection = () => {
     return (
