@@ -4,13 +4,20 @@ import Project from "./components/Project";
 
 import sampleThumbnail from "../../assets/project-thumbnails/sample.png";
 
+import thumbnail1 from "../../../project-folders/Personal Blog/thumbnail.png";
+import thumbnail2 from "../../../project-folders/Table/thumbnail.png";
+
 const projects = [
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
-    { thumbnail: sampleThumbnail, title: "Title Nigga" },
+    {
+        thumbnail: thumbnail1,
+        title: "Personal Blog",
+        link: "/project-folders/Personal Blog/index.html",
+    },
+    {
+        thumbnail: thumbnail2,
+        title: "HTML Tables",
+        link: "/project-folders/Table/1.html",
+    },
 ];
 
 function ProjectsHeader() {
