@@ -26,10 +26,9 @@ function ProjectsHeader() {
 }
 
 const Projects = () => {
-    
     return (
-        <div className="py-14 px-28 h-fit w-full border-t-8 border-black">
-            <div className="grid grid-cols-2 w-full h-fit gap-y-16">
+        <div className="overflow-y-hidden py-14 px-28 h-fit w-full border-t-8 border-black">
+            <div className="grid grid-cols-2 w-full h-fit gap-y-20">
                 <ProjectsHeader />
                 {projects.map((project, i) => {
                     return <Project properties={project} key={i} i={i + 1} />;
