@@ -39,7 +39,7 @@ function Icon({ showIcons, properties }) {
 }
 
 const iconCollections = [
-    { icon: c, y: -260, x: -60, color: "rgb(0, 88, 157)" },
+    { icon: c, y: -260, x: -60, color: "rgb(101,155,211)" },
     { icon: csharp, y: 270, x: 60, color: "rgb(130, 44, 152)" },
     { icon: java, y: 170, x: -250, color: "rgb(236, 32, 37)" },
     { icon: javascript, y: 90, x: 250, color: "rgb(247, 224, 24)" },

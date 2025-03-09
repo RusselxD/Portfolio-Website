@@ -52,8 +52,8 @@ const ProfileLinks = () => {
             <div className="border border-red-700 w-fit relative">
                 <motion.button
                     whileHover={{
-                        x: 3,
-                        y: 3,
+                        x: 2,
+                        y: 2,
                     }}
                     whileTap={{
                         x: 6,
@@ -71,10 +71,12 @@ const ProfileLinks = () => {
                 <span className="absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
             </div>
             {showLinks && (
-                <div className="rounded-lg w-[19rem] h-fit absolute top-16 left-2 border border-black grid grid-cols-2 grid-rows-2 overflow-hidden">
-                    {profiles.map((profile, i) => {
-                        return <Links profile={profile} />;
-                    })}
+                <div className="shadow-[0_0_5px_black] rounded-lg w-[19rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">
+                    <div className="grid grid-cols-2">
+                        {profiles.map((profile, i) => {
+                            return <Links profile={profile} />;
+                        })}
+                    </div>
                 </div>
             )}
         </div>
