@@ -55,9 +55,21 @@ const ProfileSection = () => {
     }
 
     return (
-        <div className="relative w-full h-full flex justify-center items-center">
-            <div className="w-full flex justify-center items-center">
+        <div className="w-full h-full flex justify-center items-center relative">
+            <div className="w-full flex justify-center items-center relative">
                 <div className="h-[27rem] relative">
+                    {!showIcons && (
+                        <div
+                            className="absolute -top-9 left-3 w-8 h-8 bg-primary"
+                            style={{ clipPath: "polygon(50% 100%,100% 0,0 0)" }}
+                        ></div>
+                    )}
+                    {!showIcons && (
+                        <div className="absolute rounded-md -top-20 left-0 text-white bg-primary px-5 py-3">
+                            Click to view my Tech Stack!
+                        </div>
+                    )}
+
                     <motion.img
                         onClick={handleShowIcons}
                         src={profile}

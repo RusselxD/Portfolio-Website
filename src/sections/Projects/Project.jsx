@@ -12,8 +12,8 @@ const Project = ({ i, properties }) => {
     const hidenXAxis = i % 2 !== 0 ? 300 : -300;
     const yAxis = i % 2 !== 0 ? 112 : 0;
     return (
-        <a href={link} target="_blank">
-            <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center">
+            
                 <motion.div
                     ref={ref}
                     initial={{ x: hidenXAxis, y: yAxis, opacity: 0 }}
@@ -23,6 +23,8 @@ const Project = ({ i, properties }) => {
                         i % 2 !== 0 ? "translate-y-16" : ""
                     }`}
                 >
+                    <div>
+                    <a href={link} target="_blank">
                     <img
                         src={thumbnail}
                         className="h-full object-cover object-center"
@@ -36,9 +38,12 @@ const Project = ({ i, properties }) => {
                     >
                         <p className="text-white pl-5 text-2xl font-bold">{title}</p>
                     </div>
+                        </a>
+                    </div>
+                    
                 </motion.div>
-            </div>
-        </a>
+            
+        </div>
     );
 };
 

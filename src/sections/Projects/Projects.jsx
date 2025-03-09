@@ -36,6 +36,11 @@ const projects = [
         title: "HTML Tables",
         link: "/project-folders/Table/1.html",
     },
+    {
+        thumbnail: thumbnail1,
+        title: "Personal Blog",
+        link: "/project-folders/Personal Blog/index.html",
+    },
 ];
 
 function ProjectsHeader() {
@@ -52,11 +57,7 @@ function ProjectsHeader() {
 
 const Projects = () => {
     return (
-        <div
-            className={`overflow-y-hidden pt-14 px-28 h-fit w-full border-t-8 border-black ${
-                projects.length % 2 !== 0 ? "pb-40" : "pb-14"
-            }`}
-        >
+        <div className={`overflow-y-hidden  px-28 h-fit w-full border-t-8 border-black ${projects.length % 2 !== 0 ? "pb-40" : "pb-14"}`}>
             <div className="grid grid-cols-2 w-full h-fit gap-y-20">
                 <ProjectsHeader />
                 {projects.map((project, i) => {
