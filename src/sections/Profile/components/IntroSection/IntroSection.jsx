@@ -4,19 +4,16 @@ import ProfileLinks from "./ProfileLinks";
 
 const IntroSection = () => {
     return (
-        <div className="w-full pl-2 flex justify-center items-center -mt-16">
+        <div className="lg:-mt-32 w-full flex justify-center items-center">
             <div className="h-fit">
-                <h2 className="text-3xl font-semibold mb-5 text-primary">Hi,</h2>
-                <h1 className="font-bold text-5xl mb-6">
+                <h2 className="lg:text-3xl xl:text-4xl font-semibold lg:mb-3 xl:mb-5 text-primary">Hi,</h2>
+                <h1 className="font-bold lg:text-4xl xl:text-5xl lg:mb-3 xl:mb-5">
                     I'm <span className="text-[rgba(10,207,245,255)]">Russel</span>
                 </h1>
-                <h1 className="font-bold text-4xl mb-5">
+                <h1 className="lg:leading-10 font-bold lg:text-3xl xl:text-4xl lg:mb-4">
                     Programmer &amp; Web Developer
                 </h1>
-                <p
-                    className="text-slate-700 text-base mb-6"
-                    style={{ lineHeight: "3rem" }}
-                >
+                <p className="text-slate-700 md:text-base xl:text-lg mb-6 lg:leading-10 xl:leading-[2.7rem]">
                     I’m an IT student passionate about programming and building
                     functional, user-friendly applications. I love exploring new
                     technologies and constantly improving my ability to create

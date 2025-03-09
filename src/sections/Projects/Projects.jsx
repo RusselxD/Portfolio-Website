@@ -45,9 +45,9 @@ const projects = [
 
 function ProjectsHeader() {
     return (
-        <div className="w-full flex justify-center px-16 flex-col">
+        <div className="w-full flex justify-center flex-col">
             <h1 className="font-bold text-4xl mb-3">HTML &amp; CSS Projects</h1>
-            <p className="text-lg" style={{ lineHeight: "2rem" }}>
+            <p className="lg:leading-10 text-lg">
                 Here are some of the projects I have worked on for Web Systems and
                 Technologies.
             </p>
@@ -57,7 +57,7 @@ function ProjectsHeader() {
 
 const Projects = () => {
     return (
-        <div className={`overflow-y-hidden  px-28 h-fit w-full border-t-8 border-black ${projects.length % 2 !== 0 ? "pb-40" : "pb-14"}`}>
+        <div className={`overflow-y-hidden px-28 h-fit w-full border-t-4 lg:pt-16 border-black ${projects.length % 2 !== 0 ? "pb-40" : "pb-14"}`}>
             <div className="grid grid-cols-2 w-full h-fit gap-y-20">
                 <ProjectsHeader />
                 {projects.map((project, i) => {

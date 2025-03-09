@@ -57,7 +57,7 @@ const ProfileSection = () => {
     return (
         <div className="w-full h-full flex justify-center items-center relative">
             <div className="w-full flex justify-center items-center relative">
-                <div className="h-[27rem] relative">
+                <div className="lg:h-[24rem] xl:h-[26rem] relative">
                     {!showIcons && (
                         <div
                             className="absolute -top-9 left-3 w-8 h-8 bg-primary"
@@ -84,11 +84,10 @@ const ProfileSection = () => {
                     />
                     <span className="-z-10 absolute bg-black top-4 left-4 w-full h-full"></span>
                 </div>
-            </div>
-
-            {iconCollections.map((icon, i) => {
+                {iconCollections.map((icon, i) => {
                 return <Icon showIcons={showIcons} properties={icon} key={i} />;
             })}
+            </div>
         </div>
     );
 };
