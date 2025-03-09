@@ -35,7 +35,7 @@ function Links({ profile }) {
 
     return (
         <a href={link} target="_blank">
-            <div className="px-3 py-3 w-full h-full flex justify-start items-center hover:bg-gray-200">
+            <div className="px-3 py-3 w-full h-full flex justify-start items-center hover:bg-slate-200">
                 <img src={icon} className="w-7 mr-2" />
 
                 <p className="text-sm">{userName}</p>
