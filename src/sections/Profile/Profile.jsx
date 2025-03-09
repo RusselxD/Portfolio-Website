@@ -7,7 +7,7 @@ import ProfileSection from "./components/ProfileSection";
 
 const Profile = () => {
     return (
-        <div className="h-full w-full px-32 flex flex-col">
+        <div className="h-screen w-full px-32 flex flex-col">
             <Navbar />
             <div className="grid grid-cols-2 m-0 h-full ">
                <IntroSection/>
