@@ -56,7 +56,7 @@ const ProfileSection = () => {
 
     return (
         <div className="relative w-full h-full flex justify-center items-center">
-            <div className="border border-red-600 w-full flex justify-center items-center">
+            <div className="w-full flex justify-center items-center">
                 <div className="h-[27rem] relative">
                     <motion.img
                         onClick={handleShowIcons}

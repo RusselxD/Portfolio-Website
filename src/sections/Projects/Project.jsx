@@ -13,7 +13,7 @@ const Project = ({ i, properties }) => {
     const yAxis = i % 2 !== 0 ? 112 : 0;
     return (
         <a href={link} target="_blank">
-            <div className="w-full border border-violet-900 flex justify-center items-center">
+            <div className="w-full flex justify-center items-center">
                 <motion.div
                     ref={ref}
                     initial={{ x: hidenXAxis, y: yAxis, opacity: 0 }}
@@ -28,7 +28,7 @@ const Project = ({ i, properties }) => {
                         className="h-full object-cover object-center"
                     />
                     <div
-                        className="flex items-center absolute bottom-0 w-full h-32 border border-black  "
+                        className="flex items-center absolute bottom-0 w-full h-32"
                         style={{
                             background:
                                 "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0, 0.8) 100%)",

@@ -37,7 +37,6 @@ function Links({ profile }) {
         <a href={link} target="_blank">
             <div className="px-3 py-3 w-full h-full flex justify-start items-center hover:bg-slate-200">
                 <img src={icon} className="w-7 mr-2" />
-
                 <p className="text-sm">{userName}</p>
             </div>
         </a>
@@ -48,8 +47,8 @@ const ProfileLinks = () => {
     const [showLinks, setShowLinks] = useState(false);
 
     return (
-        <div className="relative w-fit border border-green-700">
-            <div className="border border-red-700 w-fit relative">
+        <div className="relative w-fit">
+            <div className="w-fit relative">
                 <motion.button
                     whileHover={{
                         x: 2,
