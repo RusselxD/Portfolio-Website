@@ -2,8 +2,6 @@ import React from "react";
 
 import Project from "./components/Project";
 
-import sampleThumbnail from "../../assets/project-thumbnails/sample.png";
-
 import thumbnail1 from "../../../project-folders/Personal Blog/thumbnail.png";
 import thumbnail2 from "../../../project-folders/Table/thumbnail.png";
 
