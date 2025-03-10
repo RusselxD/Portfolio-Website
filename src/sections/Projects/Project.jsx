@@ -19,7 +19,7 @@ const Project = ({ i, properties }) => {
                     initial={{ x: hidenXAxis, y: yAxis, opacity: 0 }}
                     animate={inView ? { x: 0, y: yAxis, opacity: 1 } : {}}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className={`relative w-4/5 border-[3px] border-black  ${
+                    className={`relative md:w-5/6 lg:w-4/5 border-[3px] border-black  ${
                         i % 2 !== 0 ? "translate-y-16" : ""
                     }`}
                 >

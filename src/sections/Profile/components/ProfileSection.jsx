@@ -16,7 +16,7 @@ function Icon({ showIcons, properties }) {
 
     return (
         <motion.div
-            className="absolute md:w-14 lg:w-16 -z-20 "
+            className="absolute w-16 md:w-14 lg:w-16 -z-20 "
             initial={{ y: 0, x: 0 }}
             animate={showIcons ? { y: y, x: x } : {}}
             transition={{ duration: 0.5 }}
@@ -41,13 +41,13 @@ function Icon({ showIcons, properties }) {
 const ProfileSection = () => {
     const [showIcons, setShowIcons] = useState(false);
 
-    let rightIconsX = window.innerWidth > 1024 ? 250 : 100;
-    let rightIconsY = window.innerWidth > 1024 ? 150 : 280;
+    let rightIconsX = window.innerWidth > 1024 || window.innerWidth < 768 ? 250 : 100;
+    let rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
 
-    let polarIconsY = window.innerWidth > 1024 ? 280 : 240;
+    let polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
 
-    let cIconX = window.innerWidth > 1024 ? -60 : -100;
-    let csIconX = window.innerWidth > 1024 ? 60 : -100;
+    let cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
+    let csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
     useEffect(() => {
         window.addEventListener("resize", () => {
@@ -58,7 +58,7 @@ const ProfileSection = () => {
 
             cIconX = window.innerWidth > 1024 ? -60 : -100;
             csIconX = window.innerWidth > 1024 ? 60 : -100;
-            
+
             setShowIcons(false);
             // hide icons on resize
         });
@@ -88,9 +88,9 @@ const ProfileSection = () => {
     ];
 
     return (
-        <div className="w-full h-full flex justify-center items-center relative">
+        <div className="w-full h-3/5 mb-16 md:h-full flex justify-center items-center relative">
             <div className="w-full flex justify-center items-center relative">
-                <div className="md:h-80 lg:h-[24rem] xl:h-[26rem] relative">
+                <div className="h-72 sm:h-[22rem] md:h-80 lg:h-[24rem] xl:h-[26rem] relative">
                     {!showIcons && (
                         <div
                             className="absolute -top-9 left-3 w-8 h-8 bg-primary"
@@ -98,7 +98,7 @@ const ProfileSection = () => {
                         ></div>
                     )}
                     {!showIcons && (
-                        <div className="absolute rounded-md -top-20 left-0 text-white bg-primary px-5 py-3">
+                        <div className="absolute rounded-md -top-20 left-0 text-sm sm:text-base text-white bg-primary px-5 py-3">
                             Click to view my Tech Stack!
                         </div>
                     )}
