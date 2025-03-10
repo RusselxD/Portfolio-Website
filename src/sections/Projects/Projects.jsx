@@ -2,8 +2,8 @@ import React from "react";
 
 import Project from "./Project";
 
-import thumbnail1 from "/public/project-folders/Personal Blog/thumbnail.png";
-import thumbnail2 from "/public/project-folders/Table/thumbnail.png";
+import thumbnail1 from "/project-folders/Personal Blog/thumbnail.png";
+import thumbnail2 from "/project-folders/Table/thumbnail.png";
 
 const projects = [
     {
