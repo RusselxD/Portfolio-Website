@@ -41,23 +41,21 @@ function Icon({ showIcons, properties }) {
 const ProfileSection = () => {
     const [showIcons, setShowIcons] = useState(false);
 
-    let rightIconsX = window.innerWidth > 1024 || window.innerWidth < 768 ? 250 : 100;
+    let rightIconsX = window.innerWidth > 1024 ? 250 :  window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
     let rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
-
+    let leftIconsX = window.innerWidth > 640 ? -250 : -190;
     let polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
-
     let cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
     let csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-            rightIconsX = window.innerWidth > 1024 ? 250 : 100;
-            rightIconsY = window.innerWidth > 1024 ? 150 : 280;
-
-            polarIconsY = window.innerWidth > 1024 ? 280 : 240;
-
-            cIconX = window.innerWidth > 1024 ? -60 : -100;
-            csIconX = window.innerWidth > 1024 ? 60 : -100;
+        rightIconsX = window.innerWidth > 1024 || window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
+        rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
+        leftIconsX = window.innerWidth > 640 ? -250 : -190;
+        polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
+        cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
+        csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
             setShowIcons(false);
             // hide icons on resize
@@ -71,14 +69,14 @@ const ProfileSection = () => {
     const iconCollections = [
         { icon: c, y: -polarIconsY, x: cIconX, color: "rgb(101,155,211)" },
         { icon: csharp, y: polarIconsY, x: csIconX, color: "rgb(130, 44, 152)" },
-        { icon: java, y: 130, x: -250, color: "rgb(236, 32, 37)" },
+        { icon: java, y: 130, x: leftIconsX, color: "rgb(236, 32, 37)" },
         {
             icon: javascript,
             y: rightIconsY,
             x: rightIconsX,
             color: "rgb(247, 224, 24)",
         },
-        { icon: reactIcon, y: -100, x: -250, color: "rgb(97, 219, 251)" },
+        { icon: reactIcon, y: -100, x: leftIconsX, color: "rgb(97, 219, 251)" },
         {
             icon: python,
             y: -rightIconsY,
@@ -88,7 +86,7 @@ const ProfileSection = () => {
     ];
 
     return (
-        <div className="w-full h-3/5 mb-16 md:h-full flex justify-center items-center relative">
+        <div className="w-full h-3/5 mb-32 md:h-full flex justify-center items-center relative">
             <div className="w-full flex justify-center items-center relative">
                 <div className="h-72 sm:h-[22rem] md:h-80 lg:h-[24rem] xl:h-[26rem] relative">
                     {!showIcons && (

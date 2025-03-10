@@ -4,8 +4,8 @@ import ProfileLinks from "./ProfileLinks";
 
 const IntroSection = () => {
     return (
-        <div className="h-[50vh] sm:h-[75vh] mb-[21rem] sm:mb-40 md:h-screen -mt-0 md:-mt-28 lg:-mt-32 w-full flex justify-center items-center">
-            <div className="mt-28 sm:-mt-28 md:-mt-0 md:h-fit">
+        <div className="h-[50vh] sm:h-[75vh] mb-[19rem] sm:mb-12 md:mb-0 md:h-screen -mt-0 md:-mt-28 lg:-mt-32 w-full flex justify-center items-center">
+            <div className="mt-28 sm:-mt-28 md:h-fit md:mt-28">
                 <h2 className="text-[1.5rem] sm:text-[2rem] md:text-3xl lg:text-3xl xl:text-4xl font-semibold mb-2 md:mb-5 lg:mb-3 xl:mb-5 text-primary">
                     Hi,
                 </h2>

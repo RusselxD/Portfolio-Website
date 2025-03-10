@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { useInView } from "react-intersection-observer";
 
@@ -9,40 +9,64 @@ const Project = ({ i, properties }) => {
 
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                setWindowWidth(window.innerWidth);
+            }, 5);
+        });
+    }, []);
+
     const hidenXAxis = i % 2 !== 0 ? 300 : -300;
-    const yAxis = i % 2 !== 0 ? 112 : 0;
+    const yAxis = i % 2 !== 0 && windowWidth > 768 ? 112 : 0;
+
     return (
         <div className="w-full flex justify-center items-center">
-            
-                <motion.div
-                    ref={ref}
-                    initial={{ x: hidenXAxis, y: yAxis, opacity: 0 }}
-                    animate={inView ? { x: 0, y: yAxis, opacity: 1 } : {}}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className={`relative md:w-5/6 lg:w-4/5 border-[3px] border-black  ${
-                        i % 2 !== 0 ? "translate-y-16" : ""
-                    }`}
-                >
-                    <div>
+            <motion.div
+                ref={ref}
+                initial={{
+                    x: hidenXAxis,
+                    y: yAxis,
+                    opacity: 0,
+                }}
+                animate={
+                    inView
+                        ? {
+                              x: 0,
+                              y: yAxis,
+                              opacity: 1,
+                          }
+                        : {}
+                }
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className={`relative w-[80%] md:w-5/6 lg:w-4/5 border-[3px] border-black  ${
+                    i % 2 !== 0 ? "md:translate-y-16" : ""
+                }`}
+            >
+                <div>
                     <a href={link} target="_blank">
-                    <img
-                        src={thumbnail}
-                        className="h-full object-cover object-center"
-                    />
-                    <div
-                        className="flex items-center absolute bottom-0 w-full h-32"
-                        style={{
-                            background:
-                                "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0, 0.8) 100%)",
-                        }}
-                    >
-                        <p className="text-white pl-5 text-2xl font-bold">{title}</p>
-                    </div>
-                        </a>
-                    </div>
-                    
-                </motion.div>
-            
+                        <img
+                            src={thumbnail}
+                            className="h-full object-cover object-center"
+                        />
+                        <div
+                            className="flex items-center absolute bottom-0 w-full h-32"
+                            style={{
+                                background:
+                                    "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0, 0.8) 100%)",
+                            }}
+                        >
+                            <p className="text-white pl-5 text-2xl font-bold">
+                                {title}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </motion.div>
         </div>
     );
 };

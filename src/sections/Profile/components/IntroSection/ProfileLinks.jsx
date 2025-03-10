@@ -73,7 +73,7 @@ const ProfileLinks = () => {
                 <div className="shadow-[0_0_5px_black] rounded-lg w-60 md:w-64 lg:w-[19rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">
                     <div className="grid grid-cols-2">
                         {profiles.map((profile, i) => {
-                            return <Links profile={profile} />;
+                            return <Links key={i} profile={profile} />;
                         })}
                     </div>
                 </div>
