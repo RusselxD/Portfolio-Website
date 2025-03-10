@@ -4,6 +4,10 @@ import Project from "./Project";
 
 import thumbnail1 from "/project-folders/Personal Blog/thumbnail.png";
 import thumbnail2 from "/project-folders/Table/thumbnail.png";
+import thumbnail3 from "/project-folders/Gallery/thumbnail.png";
+import thumbnail4 from "/project-folders/Position/thumbnail.png";
+import thumbnail5 from "/project-folders/Categories/thumbnail.png";
+import thumbnail6 from "/project-folders/Forms/thumbnail.png";
 
 const projects = [
     {
@@ -17,29 +21,24 @@ const projects = [
         link: "/project-folders/Table/1.html",
     },
     {
-        thumbnail: thumbnail1,
-        title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        thumbnail: thumbnail3,
+        title: "Image Gallery",
+        link: "/project-folders/Gallery/index.html",
     },
     {
-        thumbnail: thumbnail2,
-        title: "HTML Tables",
-        link: "/project-folders/Table/1.html",
+        thumbnail: thumbnail4,
+        title: "CSS Positions",
+        link: "/project-folders/Position/index.html",
     },
     {
-        thumbnail: thumbnail1,
-        title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        thumbnail: thumbnail5,
+        title: "Microsoft Office Apps",
+        link: "/project-folders/Categories/index.html",
     },
     {
-        thumbnail: thumbnail2,
-        title: "HTML Tables",
-        link: "/project-folders/Table/1.html",
-    },
-    {
-        thumbnail: thumbnail1,
-        title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        thumbnail: thumbnail6,
+        title: "HTML Form",
+        link: "/project-folders/Forms/index.html",
     },
 ];
 

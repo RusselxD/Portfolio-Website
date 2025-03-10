@@ -44,7 +44,7 @@ const Project = ({ i, properties }) => {
                         : {}
                 }
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`relative w-[80%] md:w-5/6 lg:w-4/5 border-[3px] border-black ${
+                className={`relative w-[80%] md:w-5/6 lg:w-4/5 shadow-[10px_10px_0px_rgba(39,204,114,255)] border-2 border-black rounded-2xl overflow-hidden ${
                     i % 2 !== 0 ? "md:translate-y-16" : ""
                 }`}
             >
@@ -54,7 +54,7 @@ const Project = ({ i, properties }) => {
                             src={thumbnail}
                             className="h-full object-cover object-center"
                         />
-                        <div className="absolute top-0 left-0 w-full h-full bg-transparent z-10 hover:bg-[rgba(0,0,0,0.3)] transition-colors duration-300 ease-in-out"></div>
+                        <div className="absolute top-0 left-0 w-full h-full bg-transparent z-10 hover:bg-[rgba(0,0,0,0.2)] transition-colors duration-300 ease-in-out"></div>
                         <div
                             className="flex items-center absolute bottom-0 w-full h-28"
                             style={{

@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    overflow-x: hidden;
+}
+
+aside{
+    background-color: black;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-li:hover{
+    color: blue;
+}
+
+#nav-header{
+    text-align: center;
+    background-color: blueviolet;
+    color: rgb(226, 45, 105);
+}
+
+#nav-ul{
+    list-style-type: none;
+}
+
+.nav-li{
+    background-color: rgb(85, 52, 43);
+    color:aquamarine;
+    padding: 0.2rem 0 0.2rem 1rem;
+    margin: 0.15rem 0;
+    width: 15rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+main{
+    width: 100%;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+#main-header{
+    font-size: 1.5rem;
+}
+
+.box{
+    border-style: double;
+    border-color: rgb(10, 228, 210);
+    width: fit-content;
+    padding: 0.9rem;
+    margin: 0 0 0.8rem 1rem;
+    background-color: rgb(117, 21, 21);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-header{
+    margin: 0;
+    color:rgb(16, 194, 179);
+}
+
+.box-ul{
+    list-style-type: square;
+    color: rgb(10, 228, 210);
+    margin-top: 1rem;
+}
+
+.box-ul li{
+    background-color: fuchsia;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-style: double;
+    width: 20rem;
+    font-weight: 600;
+}

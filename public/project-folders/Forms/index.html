@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form name="form">
+
+        <table border="1">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><input type="text" name="country" size="20" maxlength="10"/></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select>
+                        <option>------
+                        <option>Male
+                        <option>Female
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Birthdate:</td>
+                <td>
+                    <select>
+                        <option>Month
+                        <option>Jan
+                        <option>Feb
+                        <option>Mar
+                        <option>Apr
+                        <option>May
+                        <option>Jun
+                        <option>Jul
+                        <option>Aug
+                        <option>Sep
+                        <option>Oct
+                        <option>Nov
+                        <option>Dec
+                    </select>
+                    <select>
+                        <option>Day
+                        <option>1    
+                        <option>2
+                        <option>3
+                        <option>4
+                        <option>5
+                        <option>6
+                        <option>7
+                        <option>8
+                        <option>9
+                        <option>10
+                        <option>11
+                        <option>12
+                        <option>13
+                        <option>14
+                        <option>15
+                        <option>16
+                        <option>17
+                        <option>18
+                        <option>19
+                        <option>20
+                        <option>21
+                        <option>22
+                        <option>23
+                        <option>24
+                        <option>25
+                        <option>26
+                        <option>27
+                        <option>28
+                        <option>29
+                        <option>30
+                        <option>31
+                    </select>
+                    <select>
+                        <option>Year
+                        <option>1990
+                        <option>1991
+                        <option>1992
+                        <option>1993
+                        <option>1994
+                        <option>1995
+                        <option>1996
+                        <option>1997
+                        <option>1998
+                        <option>1999
+                        <option>2001
+                        <option>2002
+                        <option>2003
+                        <option>2004
+                        <option>2005
+                        <option>2006
+                        <option>2007
+                        <option>2008
+                        <option>2009
+                        <option>2010
+                        <option>2011
+                        <option>2012
+                        <option>2013
+                        <option>2014
+                        <option>2015
+                        <option>2016
+                        <option>2017
+                        <option>2018
+                        <option>2019
+                        <option>2020
+                        <option>2021
+                        <option>2022
+                        <option>2023
+                        <option>2024
+                        <option>2025 
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <input type="radio" name="stat"/>Single
+                    <input type="radio" name="stat"/>Married
+                    <input type="radio" name="stat"/>Widowed
+                    <input type="radio" name="stat"/>Separated
+                    <input type="radio" name="stat"/>Divorced
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">Course Interested</td>
+                <td>                    
+                    <input type="checkbox" name="bsit"/>BSIT
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="bsee"/>BSEE</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="bsce"/>BSCE</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="bsed"/>BSED</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="bac"/>BAC</td>
+            </tr>
+            <tr>
+                <td>COMMENTS/SUGGESTIONS</td>
+                <td>
+                    <textarea rows="10" cols="80">
+                        type text here...
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+        
+<!--         
+        <input type="password" name="username" size="20" maxlength="10"/>
+        
+        Surname:&nbsp;&nbsp;&nbsp;<input type="text" name="sname" size="20" maxlength="10"/>
+        <br/> <br/>
+        Firstname:&nbsp;&nbsp;&nbsp;<input type="text" name="fname" size="20" maxlength="10"/>
+        <br/> <br/>
+        Middle Name:&nbsp;&nbsp;&nbsp;<input type="text" name="mname" size="20" maxlength="10"/>
+        <br/> <br/>
+        AGE: <input type="textbox" name="age"/>
+        <br/> <br/>
+        SEX: Male <input type="radio" name="sex"/>
+             Female <input type="radio" name="sex"/>
+        <br/> <br/>   
+        
+        <br/> <br/>                 
+        
+        <br/> <br/>   
+
+        <textarea rows="30" cols="20">
+            type text here...
+        </textarea>
+        <br/> <br/>   
+        <input type="button" value="Sample" name="button"/>
+        <br/> <br/>   
+        <input type="submit" value="Submit" name="submit-button"/>
+        <br/> <br/>   
+        <input type="reset" value="Clear" name="clear"/>
+        <br/> <br/>   
+        BIRTHDAY: Month Day Year
+                
+                 -->
+                
+
+    </form>
+</body>
+</html>
