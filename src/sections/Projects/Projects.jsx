@@ -9,37 +9,37 @@ const projects = [
     {
         thumbnail: thumbnail1,
         title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        link: "../../../project-folders/Personal Blog/index.html",
     },
     {
         thumbnail: thumbnail2,
         title: "HTML Tables",
-        link: "/project-folders/Table/1.html",
+        link: "../../../project-folders/Table/1.html",
     },
     {
         thumbnail: thumbnail1,
         title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        link: "../../../project-folders/Personal Blog/index.html",
     },
     {
         thumbnail: thumbnail2,
         title: "HTML Tables",
-        link: "/project-folders/Table/1.html",
+        link: "../../../project-folders/Table/1.html",
     },
     {
         thumbnail: thumbnail1,
         title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        link: "../../../project-folders/Personal Blog/index.html",
     },
     {
         thumbnail: thumbnail2,
         title: "HTML Tables",
-        link: "/project-folders/Table/1.html",
+        link: "../../../project-folders/Table/1.html",
     },
     {
         thumbnail: thumbnail1,
         title: "Personal Blog",
-        link: "/project-folders/Personal Blog/index.html",
+        link: "../../../project-folders/Personal Blog/index.html",
     },
 ];
 
