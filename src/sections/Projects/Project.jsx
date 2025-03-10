@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Project = ({ i, properties }) => {
     const { thumbnail, title, link } = properties;
 
-    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.7 });
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
