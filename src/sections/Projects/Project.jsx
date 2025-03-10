@@ -27,6 +27,7 @@ const Project = ({ i, properties }) => {
     return (
         <div className="w-full flex justify-center items-center">
             <motion.div
+                style={{ willChange: "transform" }}
                 ref={ref}
                 initial={{
                     x: hidenXAxis,
