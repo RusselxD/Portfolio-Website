@@ -21,7 +21,7 @@ const Project = ({ i, properties }) => {
         });
     }, []);
 
-    const hidenXAxis = i % 2 !== 0 ? 300 : -300;
+    const hidenXAxis = i % 2 !== 0 ? 100 : -100;
     const yAxis = i % 2 !== 0 && windowWidth > 768 ? 112 : 0;
 
     return (
