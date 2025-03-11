@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-const descriptions = ["Programmer", "Web Developer"];
+import "./style.css";
 
-const test = "Programmer";
+const descriptions = ["Programmer", "Web Developer"];
 
 function delay() {
     return new Promise((resolve) => setTimeout(resolve, 500));
@@ -44,7 +44,15 @@ const AnimatedText = () => {
 
     return (
         <h1 className="lg:leading-10 font-bold text-2xl sm:text-3xl lg:text-[2rem] xl:text-4xl mb-4 sm:mb-5 md:mb-6 lg:mb-4">
-            {text}&nbsp;
+            {text}
+            <span
+                className={` ${
+                    index > descriptions[outerIndex].length ? "cursor" : ""
+                }`}
+            >
+                |
+            </span>
+            &nbsp;
         </h1>
     );
 };
