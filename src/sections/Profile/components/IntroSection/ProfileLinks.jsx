@@ -35,9 +35,9 @@ function Links({ profile }) {
 
     return (
         <a href={link} target="_blank">
-            <div className="px-3 py-3 w-full h-full flex justify-start items-center hover:bg-gray-200">
-                <img src={icon} className="w-5 lg:w-7 mr-2" />
-                <p className="text-xs lg:text-sm">{userName}</p>
+            <div className="p-3 w-full h-full flex justify-start items-center hover:bg-gray-200">
+                <img src={icon} className="w-5 lg:w-6 mr-2" />
+                <p className="text-xs lg:text-[0.8rem]">{userName}</p>
             </div>
         </a>
     );
@@ -51,8 +51,8 @@ const ProfileLinks = () => {
     return (
         <div className="relative w-fit">
             <div className="w-fit relative">
-                <button                    
-                    className="profiles-button rounded-sm px-5 py-3 bg-black text-white text-sm lg:text-base"
+                <button
+                    className="profiles-button rounded-sm px-5 py-3 bg-black text-white text-xs sm:text-sm lg:text-base"
                     onClick={() => setShowLinks(!showLinks)}
                 >
                     My Profiles
@@ -61,7 +61,7 @@ const ProfileLinks = () => {
                 <span className="rounded-sm absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
             </div>
             {showLinks && (
-                <div className="shadow-[0_0_5px_black] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg w-60 md:w-64 lg:w-[19rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">
+                <div className="shadow-[0_0_5px_black] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg w-60 md:w-64 lg:w-[17rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">
                     <div className="grid grid-cols-2">
                         {profiles.map((profile, i) => {
                             return <Links key={i} profile={profile} />;

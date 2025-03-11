@@ -60,7 +60,7 @@ function ProjectsHeader() {
 const Projects = () => {
     return (
         <div
-            className={`overflow-y-hidden px-3 md:px-8 lg:px-28 h-fit w-full border-t-4 pt-10  border-black ${
+            className={`overflow-y-hidden px-3 md:px-8 lg:px-28 h-fit w-full ${
                 projects.length % 2 !== 0 ? "pb-40" : "pb-14"
             }`}
         >

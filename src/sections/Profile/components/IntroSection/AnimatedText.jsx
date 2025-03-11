@@ -43,7 +43,7 @@ const AnimatedText = () => {
     }, [index, isForward]);
 
     return (
-        <h1 className="lg:leading-10 font-bold text-2xl sm:text-3xl lg:text-[2rem] xl:text-4xl mb-4 sm:mb-5 md:mb-6 lg:mb-4">
+        <h1 className="font-bold text-xl sm:text-2xl lg:text-[1.75rem] xl:text-3xl mb-1 sm:mb-2 md:mb-3 lg:mb-3">
             {text}
             <span
                 className={` ${
