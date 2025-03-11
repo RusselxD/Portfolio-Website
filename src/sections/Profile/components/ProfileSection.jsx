@@ -50,12 +50,12 @@ const ProfileSection = () => {
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-        rightIconsX = window.innerWidth > 1024 || window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
-        rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
-        leftIconsX = window.innerWidth > 640 ? -250 : -190;
-        polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
-        cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
-        csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
+            rightIconsX = window.innerWidth > 1024 || window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
+            rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
+            leftIconsX = window.innerWidth > 640 ? -250 : -190;
+            polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
+            cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
+            csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
             setShowIcons(false);
             // hide icons on resize
@@ -104,7 +104,7 @@ const ProfileSection = () => {
                     <motion.img
                         onClick={handleShowIcons}
                         src={profile}
-                        className="cursor-pointer h-full focus:outline-none"
+                        className="rounded-md cursor-pointer h-full focus:outline-none"
                         whileTap={{
                             x: 10,
                             y: 10,
@@ -113,7 +113,7 @@ const ProfileSection = () => {
                             duration: 0.08,
                         }}
                     />
-                    <span className="-z-10 absolute bg-black top-4 left-4 w-full h-full"></span>
+                    <span className="rounded-md -z-10 absolute bg-black top-4 left-4 w-full h-full"></span>
                 </div>
                 {iconCollections.map((icon, i) => {
                     return <Icon showIcons={showIcons} properties={icon} key={i} />;

@@ -61,13 +61,13 @@ const ProfileLinks = () => {
                     transition={{
                         duration: 0.08,
                     }}
-                    className="px-5 py-3 bg-black text-white text-sm lg:text-base"
+                    className="rounded-sm px-5 py-3 bg-black text-white text-sm lg:text-base"
                     onClick={() => setShowLinks(!showLinks)}
                 >
                     My Profiles
                     <FaLink className="inline-block text-primary ml-3" />
                 </motion.button>
-                <span className="absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
+                <span className="rounded-sm absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
             </div>
             {showLinks && (
                 <div className="shadow-[0_0_5px_black] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg w-60 md:w-64 lg:w-[19rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">

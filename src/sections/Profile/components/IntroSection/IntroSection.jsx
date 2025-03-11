@@ -12,7 +12,7 @@ const IntroSection = () => {
                 <h1 className="font-bold text-[2rem] sm:text-4xl md:text-4xl lg:text-[2.50rem] xl:text-5xl sm:mb-3 lg:mb-3 xl:mb-5">
                     I'm <span className="text-[rgba(10,207,245,255)]">Russel</span>
                 </h1>
-                <h1 className="lg:leading-10 font-bold text-2xl sm:text-3xl lg:text-[2rem] xl:text-4xl mb-4 sm:mb-5 md:mb-6 lg:mb-4">
+                <h1 className="prog lg:leading-10 font-bold text-2xl sm:text-3xl lg:text-[2rem] xl:text-4xl mb-4 sm:mb-5 md:mb-6 lg:mb-4">
                     Programmer &amp; Web Developer
                 </h1>
                 <p className="text-slate-700 md:text-sm lg:text-[1rem] xl:text-lg mb-4 sm:mb-5 md:mb-8 lg:mb-6 leading-9 sm:leading-10 md:leading-8 lg:leading-10 xl:leading-[2.7rem]">
