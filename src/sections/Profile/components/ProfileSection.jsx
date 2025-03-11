@@ -41,21 +41,39 @@ function Icon({ showIcons, properties }) {
 const ProfileSection = () => {
     const [showIcons, setShowIcons] = useState(false);
 
-    let rightIconsX = window.innerWidth > 1024 ? 250 :  window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
-    let rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
+    let rightIconsX =
+        window.innerWidth > 1024
+            ? 250
+            : window.innerWidth < 640
+            ? 180
+            : window.innerWidth < 768
+            ? 250
+            : 90;
+    let rightIconsY =
+        window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
     let leftIconsX = window.innerWidth > 640 ? -250 : -190;
-    let polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
+    let polarIconsY =
+        window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240 : 260;
     let cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
     let csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-            rightIconsX = window.innerWidth > 1024 || window.innerWidth < 640 ? 180 : window.innerWidth < 768 ? 250 : 90;
-            rightIconsY = window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
+            rightIconsX =
+                window.innerWidth > 1024 || window.innerWidth < 640
+                    ? 180
+                    : window.innerWidth < 768
+                    ? 250
+                    : 90;
+            rightIconsY =
+                window.innerWidth > 1024 || window.innerWidth < 768 ? 150 : 280;
             leftIconsX = window.innerWidth > 640 ? -250 : -190;
-            polarIconsY = window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240: 260;
-            cIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
-            csIconX = window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
+            polarIconsY =
+                window.innerWidth > 1024 ? 280 : window.innerWidth < 768 ? 240 : 260;
+            cIconX =
+                window.innerWidth > 1024 || window.innerWidth < 768 ? -60 : -100;
+            csIconX =
+                window.innerWidth > 1024 || window.innerWidth < 768 ? 60 : -100;
 
             setShowIcons(false);
             // hide icons on resize
@@ -101,17 +119,11 @@ const ProfileSection = () => {
                         </div>
                     )}
 
-                    <motion.img
+                    <img
                         onClick={handleShowIcons}
                         src={profile}
-                        className="rounded-md cursor-pointer h-full focus:outline-none"
-                        whileTap={{
-                            x: 10,
-                            y: 10,
-                        }}
-                        transition={{
-                            duration: 0.08,
-                        }}
+                        className="rounded-md cursor-pointer h-full focus:outline-none
+                                  active:translate-x-2 active:translate-y-2 transition-transform duration-100 ease-in-out"
                     />
                     <span className="rounded-md -z-10 absolute bg-black top-4 left-4 w-full h-full"></span>
                 </div>

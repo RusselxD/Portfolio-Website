@@ -1,11 +1,24 @@
-.profiles-button:hover{
-     transform: translate(2px, 2px);
+.profiles-button:hover {
+    transform: translate(2px, 2px);
 }
 
-.profiles-button:active{
-     transform: translate(5px, 5px);
+.profiles-button:active {
+    transform: translate(6px, 6px);
 }
 
-.profiles-button{
-     transition: transform 0.08s ease-in-out;
+.profiles-button {
+    transition: transform 0.03s ease-in-out;
 }
+
+/* .description{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    animation: typing 2s steps(26) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+} */
