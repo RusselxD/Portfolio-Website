@@ -1,0 +1,11 @@
+.profiles-button:hover{
+     transform: translate(2px, 2px);
+}
+
+.profiles-button:active{
+     transform: translate(5px, 5px);
+}
+
+.profiles-button{
+     transition: transform 0.08s ease-in-out;
+}

@@ -43,30 +43,21 @@ function Links({ profile }) {
     );
 }
 
+import "./style.css";
+
 const ProfileLinks = () => {
     const [showLinks, setShowLinks] = useState(false);
 
     return (
         <div className="relative w-fit">
             <div className="w-fit relative">
-                <motion.button
-                    whileHover={{
-                        x: 2,
-                        y: 2,
-                    }}
-                    whileTap={{
-                        x: 6,
-                        y: 6,
-                    }}
-                    transition={{
-                        duration: 0.08,
-                    }}
-                    className="rounded-sm px-5 py-3 bg-black text-white text-sm lg:text-base"
+                <button                    
+                    className="profiles-button rounded-sm px-5 py-3 bg-black text-white text-sm lg:text-base"
                     onClick={() => setShowLinks(!showLinks)}
                 >
                     My Profiles
                     <FaLink className="inline-block text-primary ml-3" />
-                </motion.button>
+                </button>
                 <span className="rounded-sm absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
             </div>
             {showLinks && (
