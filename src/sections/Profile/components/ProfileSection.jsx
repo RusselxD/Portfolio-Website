@@ -25,7 +25,7 @@ function Icon({ showIcons, properties }) {
             <motion.img
                 src={icon}
                 initial={{ y: 0 }}
-                animate={showIcons ? { y: [0, -25, 0] } : {}}
+                animate={showIcons ? { y: [0, -25, 0] } : { y: [0, 0, 0] }}
                 transition={{
                     duration: 3,
                     repeat: Infinity,
@@ -50,10 +50,10 @@ const ProfileSection = () => {
     }, []);
 
     let rightIconsX =
-        width > 1024 ? 250 : width > 768 ? 90 : width > 640 ? 230 : 210;
+        width > 1024 ? 250 : width > 768 ? 90 : width > 640 ? 230 : 180;
     let rightIconsY = width > 1024 ? 175 : width > 768 ? 250 : 150;
 
-    let leftIconsX = width > 640 ? -250 : -190;
+    let leftIconsX = width > 640 ? -250 : -180;
     let polarIconsY =
         width > 1024 ? 280 : width > 768 ? 230 : width > 640 ? 250 : 210;
 
@@ -86,7 +86,7 @@ const ProfileSection = () => {
     return (
         <div className="w-full h-3/5 mb-32 md:h-full flex justify-center items-center relative">
             <div className="w-full flex justify-center items-center relative">
-                <div className="h-80 sm:h-[21rem] md:h-72 lg:h-[22rem] xl:h-[26rem] relative">
+                <div className="h-72 sm:h-[21rem] md:h-72 lg:h-[22rem] xl:h-[26rem] relative">
                     {!showIcons && (
                         <div
                             className="absolute -top-9 sm:-top-9 left-3 w-8 h-8 bg-primary"
@@ -95,7 +95,7 @@ const ProfileSection = () => {
                     )}
                     {!showIcons && (
                         <div
-                            className="absolute rounded-md -top-14 md:-top-14 left-0 text-sm sm:text-base md:text-xs px-5 py-[0.60rem] md:py-3"
+                            className="absolute rounded-md -top-14 md:-top-14 left-0 text-xs px-5 py-[0.60rem] md:py-3"
                             style={{ backgroundColor: "rgb(64, 223, 136)" }}
                         >
                             Click to view my Tech Stack!

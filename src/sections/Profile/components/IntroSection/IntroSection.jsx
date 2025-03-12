@@ -14,7 +14,7 @@ const IntroSection = () => {
                     I'm <span className="text-[rgba(10,207,245,255)]">Russel</span>
                 </h1>
                 <AnimatedText />
-                <p className="text-slate-700 text-xs sm:text-[0.850rem] md:text-sm lg:text-[0.9rem] xl:text-base mb-4 sm:mb-5 md:mb-5 lg:mb-5 leading-7 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-[2.4rem]">
+                <p className="text-slate-700 text-xs sm:text-[0.850rem] md:text-sm lg:text-[0.9rem] xl:text-base mb-2 sm:mb-5 md:mb-5 lg:mb-5 leading-7 sm:leading-9 md:leading-9 lg:leading-9 xl:leading-[2.4rem]">
                     I’m an IT student passionate about programming and building
                     functional, user-friendly applications. I love exploring new
                     technologies and constantly improving my ability to create

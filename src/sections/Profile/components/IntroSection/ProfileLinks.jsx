@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaLink } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 import instagramIcon from "../../../../assets/instagram.svg";
 import githubIcon from "../../../../assets/github.svg";
@@ -60,15 +59,16 @@ const ProfileLinks = () => {
                 </button>
                 <span className="rounded-sm absolute left-[0.40rem] top-[0.40rem] w-full h-full -z-10 bg-primary border-2 border-black"></span>
             </div>
-            {showLinks && (
-                <div className="shadow-[0_0_5px_black] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg w-60 md:w-64 lg:w-[17rem] h-fit absolute top-16 left-2 border border-black overflow-hidden">
-                    <div className="grid grid-cols-2">
-                        {profiles.map((profile, i) => {
-                            return <Links key={i} profile={profile} />;
-                        })}
-                    </div>
+
+            <div
+                className={`${showLinks ? 'block' : 'hidden'} shadow-[0_0_5px_black] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg w-60 md:w-64 lg:w-[17rem] h-fit absolute top-14 sm:top-16 left-2 border border-black overflow-hidden`}
+            >
+                <div className="grid grid-cols-2">
+                    {profiles.map((profile, i) => {
+                        return <Links key={i} profile={profile} />;
+                    })}
                 </div>
-            )}
+            </div>
         </div>
     );
 };
